@@ -1,1 +1,1 @@
-# huawei-network-study-log
+这个是华为设备配置的学习日志
