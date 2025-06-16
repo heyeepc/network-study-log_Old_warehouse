@@ -1,0 +1,13 @@
+<Huawei>sys
+ [Huawei]sysnameR1
+ [R1]interfaceGigabitEthernet0/0/1
+ [R1-GigabitEthernet0/0/1]ipaddress192.168.2.224
+ [R1-GigabitEthernet0/0/1]quit
+ [R1]interfaceGigabitEthernet0/0/0
+ [R1-GigabitEthernet0/0/0]ipaddress192.168.3.224
+ [R1-GigabitEthernet0/0/0]quit
+ [R1]ospf1
+ [R1-ospf-1]area0
+ [R1-ospf-1-area-0.0.0.0]network192.168.2.00.0.0.255
+ [R1-ospf-1-area-0.0.0.0]network192.168.3.00.0.0.255
+ 
