@@ -2,4 +2,6 @@
 
 单臂路由的原理是通过一台路由器，使 VLAN 间互通数据通过路由器进行三层转发。如果在路由器上为每个 VLAN 分配一个单独的路由器物理接口，随着 VLAN数量的增加，必然需要更多的接口，而路由器能提供的接口数量比较有限，所以在路由器的一个物理接口上通过配置子接口（即逻辑接口）的方式来实现以一当多的功能，将是一种非常好的方式。路由器同一物理接口的不同子接口作为不同 VLAN 的默认网关，当不同 VLAN 间的用户主机需要通信时，只需将数据包发送给网关，网关处理后再发送至目的主机所在 VLAN，从而实现 VLAN 间通信。由于从拓扑结构图上看，在交换机与路由器之间，数据仅通过一条物理链路传输，故被形象地称之为“单臂路由”。
 
-![Uploading image.png…]()
+<img width="1094" height="721" alt="image" src="https://github.com/user-attachments/assets/acf8cc96-917d-43a9-9808-db52debd3e87" />
+
+<img width="1448" height="445" alt="image" src="https://github.com/user-attachments/assets/1d60653d-5e7e-4cf3-9721-d557418371c3" />
